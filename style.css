@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+ 
+  font-family: "Comfortaa", cursive;
+  margin-top: 2rem;
+}
+.container {
+  display: grid;
+  place-items: center;
+  width: 300px;
+  height: 550px;
+  margin-bottom: 1rem;
+ 
+}
+#myForm{
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.8rem;
+  width: 100%;
+  
+}
+.flex{
+  display: flex;
+  justify-content:space-between;
+  align-items: baseline;
+ 
+}
+select, input{
+ width: 80%;
+ height: 35px;
+ outline: none;
+ background: rgba(27, 25, 25, 0.623);
+ border: none;
+ color: rgb(255, 255, 255);
+ font-size: 1rem;
+ padding: 0.3rem;
+ border-radius: 3px;
+}
+
+
+#display-image{
+  width: 250px;
+  height: 250px;
+ background-image: url("images/person-icon.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+ 
+}
+
+
+#btn{
+  padding: 0.6rem;
+}
+h1{
+  width: 100%;
+  padding: 1.4rem;
+ text-align: center;
+  background-color: rgba(0, 0, 0, 0.431);
+  border-radius: 5px;
+}
+
+ 
+.wrapper{
+  width: 60%;
+   display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+ 
+  color: white;
+  background-Image:linear-gradient(rgba(0, 0, 0, 0.427),rgba(0, 0, 0, 0.1)), url("images/bg.jpg")
+ 
+  
+}
+.container2 {
+  display: grid;
+  place-items: center;
+  width: 550px;
+  height: 550px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  transition: all 1000ms;
+}
+#myForm2{
+  padding: 1rem;
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.635);
+  transition: all 1000ms;
+  
+  
+  
+}
+#myForm2:hover{
+  transition: all 1000ms;
+  
+}
+.result{
+ width: 100%;
+ text-align: center;
+ font-size: 1.3rem;
+
+ 
+}
+.flex2{
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+ 
+}
+
+.btn{
+  width: 100%;
+  padding: 0.5rem;
+
+}
+.btn:hover{
+  background-color: #1F697B;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: all 700ms;
+  
+}
+.logo{
+  width: 150px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {  
+  -webkit-appearance: none;   margin: 0; 
+}

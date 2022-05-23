@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Person Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+      integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/9753036172.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <img class="logo" src="images/evblogo.png" alt="" />
+        <h1>Person Card</h1>
+
+        <div id="myForm">
+          <div class="flex">
+            <label for="">Image:</label>
+            <input
+              type="file"
+              id="image-input"
+              accept="image/jpeg, image/png, image/jpg"
+            />
+          </div>
+
+          <div class="flex">
+            <label for="">Name:</label
+            ><input id="name" type="text" oninput="myInput()" />
+          </div>
+
+          <div class="flex">
+            <label for="">Age:</label>
+            <input id="age" type="number" oninput="myInput()" />
+          </div>
+
+          <div class="flex">
+            <label for="">City:</label>
+            <select name="city" id="city" onchange="cityChange()">
+              <option value="0" disabled selected hidden>City Select</option>
+              <option value="1">Düsseldorf</option>
+              <option value="2">Stuttgart</option>
+              <option value="3">Berlin</option>
+              <option value="4">Hamburg</option>
+              <option value="5">Mainz</option>
+              <option value="6">München</option>
+              <option value="7">Frankfurt</option>
+              <option value="8">Bremen</option>
+            </select>
+          </div>
+          <div class="flex">
+            <label for="">Job:</label
+            ><input id="job" type="text" oninput="myInput()" />
+          </div>
+          <div class="flex">
+            <label for="">E-mail:</label
+            ><input id="email" type="email" oninput="myInput()" />
+          </div>
+          <div class="flex">
+            <button class="btn" onclick="download()">Download Badge</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- **************************************************** -->
+
+      <div class="container2">
+        <div id="display-image"></div>
+        <div id="myForm2">
+          <div class="flex2">
+            <p class="result" id="resultName">
+              <i class="fa-solid fa-user"></i> Your Name
+            </p>
+          </div>
+          <div class="flex2">
+            <p class="result" id="resultAge">
+              <i class="fa-solid fa-stopwatch-20"></i> Your Age
+            </p>
+          </div>
+
+          <div class="flex2">
+            <p class="result" id="resultCity">
+              <i class="fa-solid fa-tree-city"></i> Your City
+            </p>
+          </div>
+          <div class="flex2">
+            <p class="result" id="resultJob">
+              <i class="fa-solid fa-user-tie"></i> Your Job
+            </p>
+          </div>
+          <div class="flex2">
+            <p class="result" id="resultEmail">
+              <i class="fa-solid fa-envelope"></i> Your Email
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
